@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 40px;
+    background: linear-gradient(135deg, #1a1d29 0%, #12141c 100%);
+    font-family: -apple-system, "Segoe UI", sans-serif;
+  }
+  .window {
+    width: 900px;
+    margin: 0 auto;
+    background: #0d1117;
+    border-radius: 12px;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.55), 0 0 0 1px rgba(255,255,255,0.06);
+    overflow: hidden;
+  }
+  .titlebar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 18px;
+    background: #161b22;
+    border-bottom: 1px solid #21262d;
+  }
+  .dot { width: 12px; height: 12px; border-radius: 50%; }
+  .dot.red { background: #ff5f56; }
+  .dot.yellow { background: #ffbd2e; }
+  .dot.green { background: #27c93f; }
+  .title {
+    flex: 1;
+    text-align: center;
+    color: #8b949e;
+    font-size: 13px;
+    font-family: "SF Mono", Menlo, Consolas, monospace;
+  }
+  .body {
+    padding: 26px 28px 32px;
+    font-family: "SF Mono", Menlo, Consolas, monospace;
+    font-size: 15px;
+    line-height: 1.65;
+    color: #c9d1d9;
+    white-space: pre;
+  }
+  .prompt { color: #58a6ff; }
+  .cmd { color: #e6edf3; }
+  .step { color: #79c0ff; }
+  .ok { color: #3fb950; }
+  .ok::before { content: "✔ "; }
+  .info { color: #8b949e; }
+  .fname { color: #e6edf3; }
+  .muted { color: #6e7681; }
+  .title2 { color: #d29922; }
+  .footer {
+    padding: 16px 28px 22px;
+    border-top: 1px solid #21262d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .brand {
+    font-family: -apple-system, "Segoe UI", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: #e6edf3;
+    letter-spacing: 0.2px;
+  }
+  .brand span { color: #58a6ff; }
+  .tag {
+    font-family: -apple-system, "Segoe UI", sans-serif;
+    font-size: 12.5px;
+    color: #8b949e;
+  }
+</style>
+</head>
+<body>
+  <div class="window">
+    <div class="titlebar">
+      <div class="dot red"></div>
+      <div class="dot yellow"></div>
+      <div class="dot green"></div>
+      <div class="title">vector-stock — zsh</div>
+    </div>
+    <div class="body">
+<span class="prompt">$</span> <span class="cmd">vector-stock run ./my-svgs --zip</span>
+
+<span class="step">→ Sanitizing SVGs from "./my-svgs" -&gt; "./vectorstock-output/sanitized"</span>
+<span class="ok">coffee-cup.svg <span class="muted">(44% smaller, viewBox added)</span></span>
+<span class="ok">mountain-icon.svg <span class="muted">(61% smaller, viewBox added)</span></span>
+<span class="info">ℹ Manifest written (2 sanitized asset(s), 0 failed).</span>
+
+<span class="step">→ Generating AI metadata via "ollama" for 2 asset(s)</span>
+<span class="ok">coffee-cup.svg: <span class="title2">"Hand-drawn coffee cup with steam, flat vector icon"</span> <span class="muted">(32 tags)</span></span>
+<span class="ok">mountain-icon.svg: <span class="title2">"Minimalist mountain range line icon"</span> <span class="muted">(35 tags)</span></span>
+
+<span class="step">→ Exporting CSV metadata for: adobe-stock, shutterstock, freepik</span>
+<span class="ok">Wrote <span class="fname">./vectorstock-output/adobe-stock.csv</span></span>
+<span class="ok">Wrote <span class="fname">./vectorstock-output/shutterstock.csv</span></span>
+<span class="ok">Wrote <span class="fname">./vectorstock-output/freepik.csv</span></span>
+
+<span class="step">→ Packaging 2 asset(s) into "./vectorstock-output/vectorstock-package.zip"</span>
+<span class="ok">Wrote <span class="fname">./vectorstock-output/vectorstock-package.zip</span></span>
+<span class="ok">Pipeline complete.</span>
+    </div>
+    <div class="footer">
+      <div class="brand">Vector<span>Stock</span> CLI</div>
+      <div class="tag">2 hours of tagging → 10 seconds</div>
+    </div>
+  </div>
+</body>
+</html>
