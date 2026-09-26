@@ -43,3 +43,13 @@ Node.js 20+, TypeScript, SVGO, fast-xml-parser, archiver, commander, vitest.
 ---
 
 *This is a showcase repository. It does not contain the source code — see above to get access.*
+
+## 🔗 Other projects
+
+More tools from the same author:
+
+- **[LocalVectorSync](https://github.com/Evangelikcaos/local-vector-sync)** — local-first, privacy-native vector search engine for Node/Tauri/Electron, with optional encrypted S3/R2 sync.
+- **[VectorStock CLI](https://github.com/Evangelikcaos/vector-stock-cli)** — sanitizes SVGs and auto-generates AI metadata for Adobe Stock, Freepik, and Shutterstock uploads.
+- **[ASTify](https://github.com/Evangelikcaos/AStify-app)** — AI-guided AST-based diff pruner that cuts LLM context tokens 70-80% in PR/CI code review.
+- **[ArtemisMock](https://github.com/Evangelikcaos/ArtemisMock-app)** — fully local, AI-guided real-time mock API server generated from OpenAPI/Prisma schemas.
+- **[ChronosGit](https://github.com/Evangelikcaos/ChronosGit-app)** — time-aware version control that blocks commits/pushes before expiring code reaches production.
