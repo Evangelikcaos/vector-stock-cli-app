@@ -19,7 +19,7 @@ npx vector-stock-cli run ./my-svgs --zip --marketplaces adobe-stock,shutterstock
 
 ## Built like production software, not a script
 
-This isn't a weekend hack. The full source went through a genuine, documented audit — every finding backed by a failing test before the fix and a passing one after, verified end-to-end through the real compiled CLI (not just unit tests). Recent findings included a CSV formula-injection defuse (OWASP), a filename-collision fix for assets sharing a basename across subfolders, and a fix for a stale warning that never cleared after a successful AI retag. The full report ships in the private repository alongside the code.
+This isn't a weekend hack. The full source went through a genuine, documented audit — every finding backed by a failing test before the fix and a passing one after, verified end-to-end through the real compiled CLI (not just unit tests). Recent findings included a CSV formula-injection defuse (OWASP), a filename-collision fix for assets sharing a basename across subfolders, and a fix for a stale warning that never cleared after a successful AI retag. The full report ([AUDIT.md](https://github.com/Evangelikcaos/vector-stock-cli/blob/main/AUDIT.md)) ships right in the public repository, alongside the code.
 
 - TypeScript, strict mode, zero `any` in the public surface.
 - 45 automated tests covering the sanitizer, structural analyzer, AI fallback behavior, CSV exporters, and config validation — with real SVG/XML fixtures, not mocks.
@@ -28,13 +28,15 @@ This isn't a weekend hack. The full source went through a genuine, documented au
 
 ## Get the source
 
-The full source (private repository, includes the complete audit report) is available for **$46 USD** — a one-time payment, no subscription (this payment link is shared across several of Eduar's private showcases):
+VectorStock CLI is fully open source (MIT licensed) — there is no separate paid edition. Grab the real source, install it, and read the full audit report directly in the public repository:
 
-<img src="./paypal-qr.png" alt="PayPal payment QR code" width="180" />
+**[github.com/Evangelikcaos/vector-stock-cli →](https://github.com/Evangelikcaos/vector-stock-cli)**
 
-**[Pay via PayPal →](https://www.paypal.com/ncp/payment/KN78NFJJBQFEY)**
+```bash
+npm install -g vector-stock-cli
+```
 
-In PayPal's "note to seller" field, enter your GitHub username and `VectorStock CLI`, separated by `/` — e.g. `octocat / VectorStock CLI`.
+If it saves you time, a star on the repo is appreciated.
 
 ## Stack
 
@@ -42,7 +44,7 @@ Node.js 20+, TypeScript, SVGO, fast-xml-parser, archiver, commander, vitest.
 
 ---
 
-*This is a showcase repository. It does not contain the source code — see above to get access.*
+*This is a showcase/landing page. The actual source code lives in the public repository linked above.*
 
 ## 🔗 Other projects
 
