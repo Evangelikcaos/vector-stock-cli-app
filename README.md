@@ -28,13 +28,13 @@ This isn't a weekend hack. The full source went through a genuine, documented au
 
 ## Get the source
 
-The full source (private repository, includes the complete audit report) is available for **$25** — a one-time payment, no subscription:
+The full source (private repository, includes the complete audit report) is available for **$46 USD** — a one-time payment, no subscription (this payment link is shared across several of Eduar's private showcases):
 
 <img src="./paypal-qr.png" alt="PayPal payment QR code" width="180" />
 
 **[Pay via PayPal →](https://www.paypal.com/ncp/payment/KN78NFJJBQFEY)**
 
-After payment, message with your GitHub username (or enter it in PayPal's "note to seller" field) and you'll be invited to the private repository as a collaborator.
+In PayPal's "note to seller" field, enter your GitHub username and `VectorStock CLI`, separated by `/` — e.g. `octocat / VectorStock CLI`.
 
 ## Stack
 
